@@ -1,0 +1,79 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <!-- Title TextView -->
+
+    <TextView
+        android:id="@+id/titleText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/shape"
+        android:gravity="center"
+        android:text="Intense lake-effect snow to unleash blizzard-like conditions, feet of snow. See the forecast."
+        android:textColor="@color/white"
+        android:textSize="15sp" />
+
+
+    <ImageView
+        android:id="@+id/logoImage"
+        android:layout_width="115dp"
+        android:layout_height="161dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="65dp"
+        android:layout_marginEnd="150dp"
+        android:layout_marginRight="150dp"
+        android:foregroundGravity="center"
+        android:src="@drawable/logo" />
+
+    <EditText
+        android:id="@+id/cityInput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="278dp"
+        android:hint="Search by your City"
+        android:inputType="text" />
+
+    <Button
+        android:id="@+id/getWeatherButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/button"
+        android:layout_below="@id/cityInput"
+        android:padding="10dp"
+        android:textColor="@color/white"
+        android:layout_marginTop="16dp"
+        android:text="Get Weather Condition" />
+
+    <!-- TextView for selected city -->
+    <TextView
+        android:id="@+id/selectedCity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/getWeatherButton"
+        android:layout_marginTop="25dp"
+        android:text="Selected City"
+        android:padding="10dp"
+        android:textSize="16sp"
+        android:background="@drawable/shape2"
+        android:gravity="center"
+        android:textStyle="bold" />
+
+    <!-- TextView for weather information -->
+    <TextView
+        android:id="@+id/weatherInfo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/selectedCity"
+        android:layout_marginTop="30dp"
+        android:gravity="center"
+        android:text="Updated Weather Condition"
+        android:textSize="16sp" />
+
+</RelativeLayout>
